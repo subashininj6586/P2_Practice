@@ -7,9 +7,13 @@ const App = (props) => {
     <div>
       <h1>Notes</h1>
       <ul>
-      <ul>
-        {notes.map(note => <li>{note.content}</li>)}
-      </ul>
+      
+      {notes.map(note => 
+          <li key={note.id}>
+            {note.content}
+          </li>
+        )}
+     
       </ul>
     </div>
   )
